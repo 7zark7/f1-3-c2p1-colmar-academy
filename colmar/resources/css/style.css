@@ -1,0 +1,596 @@
+html{
+  background-color: white;
+  font-size: 16px;
+  font-family: helvetica;
+}
+
+
+.content{
+  width: 100%;
+
+}
+
+/*
+.header{
+  z-index: 1;
+  position: fixed;
+  margin:auto 0;
+  top: 0;
+  left: 0;
+  display:flex;
+}
+*/
+
+.header .content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 4rem;
+
+
+}
+
+.brand-logo img{
+  height: 3rem;
+  display:flex;
+  justify-content: center;
+}
+
+.brand-name{
+  display:flex;
+  justify-content: center;
+  font-size: 2rem;
+
+}
+
+.brand-name .brand-name-first{
+    color:#303030
+
+}
+
+.brand-name .brand-name-last{
+  color:grey;
+}
+
+
+.header .content .navigation a{
+    text-decoration: none;
+    padding-left:16px;
+    color:#404040;
+    padding-right:1.5rem;
+    font-size: 1.5rem;
+}
+
+.header .content .navigation a:hover{
+  transition-property: color;
+  color: blue;
+}
+
+.header .content .navigation{
+  display: flex;
+  align-items: center;
+}
+
+.header .content .brand{
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  padding-left:1.5rem;
+}
+
+.explore .content{
+  display: flex;
+  flex-direction: row;
+}
+
+.explore-image img{
+  width:100%;
+}
+
+.explore-image{
+  /* set the container at 60% THEN set the width of the image to 100% for it resize automatically*/
+  width:60%;
+  padding-left: 1.5rem;
+  padding-right: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #D3D3D3;
+
+}
+
+.explore-content-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #D3D3D3;
+  margin-right: auto;
+  width:40%;
+}
+
+.explore-content-box-container{
+  display:flex;
+  flex-direction: column;
+  width: 75%;
+
+}
+
+.explore-content-main-text-box{
+  display: flex;
+  flex-direction: column;
+  font-size: 4rem;
+  font-weight: bolder;
+  color:#303030
+}
+
+.explore-content-sub-text-box{
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  line-height:1.5;
+  color:#303030;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.explore-starthere-btn{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 2rem;
+  color:white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #404040;
+}
+
+.explore-starthere-btn:hover{
+
+  transition-property:background-color;
+  background-color: green;
+}
+
+
+/* -- NOTICES SECTION !--*/
+
+.notices{
+  background-color: white;
+}
+
+
+.notices-content-box-left{
+  /* set the container at 60% THEN set the width of the image to 100% for it resize automatically*/
+  width:60%;
+  padding-left: 1.5rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.notices-content-sub-text-author{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+}
+
+.notices-content-box-left-image img{
+  width:100%;
+}
+
+.notices-content-box-right-image img{
+
+  width:100%;
+  height: 100%;
+
+}
+
+.notices-content-box-right-image{
+  padding-right: 1rem;
+  width:35%;
+  height: 100%;
+
+}
+
+.notices-content-box-text{
+  width: 65%;
+  height: auto;
+}
+
+.notices-content-box-right{
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+
+}
+
+.notices .content{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+
+.notices-content-box-right-middle
+,.notices-content-box-right-top
+,.notices-content-box-right-bottom{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 2rem;
+}
+
+.notices-content-box-right-bottom{
+  background-color: #D3D3D3;
+}
+
+
+.notices-content-box-right{
+  width:40%;
+}
+
+.notices-content-box-text{
+  line-height: 1.5;
+}
+
+.notices-content-box-readmore span:hover{
+  transition-property: color;
+  color: blue;
+}
+
+
+/* -- LEARN SECTION !--*/
+
+h4{
+  margin-top:0;
+  font-weight: normal;
+}
+
+.learn .content{
+  display: flex;
+  flex-direction: column;
+  background-color: #D3D3D3;
+}
+
+.learn .learn-contentbox-header{
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.learn .learn-contentbox-header h2{
+ margin:0;
+ font-weight: 900;
+}
+
+.learn .learn-content-boxs{
+  display: flex;
+  flex-flow: row wrap;
+  /*
+  padding-right: 4rem;
+  padding-left:  4rem;
+  */
+  justify-content: center;
+
+}
+
+.learn-contentbox-top-middle{
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.learn-contentbox-bottom-middle{
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.learn-contentbox-description{
+  display: flex;
+  flex-direction: column;
+}
+
+.learn-contentbox-top-middle{
+  display: flex;
+  flex-direction: column;
+}
+
+.learn-contentbox-top-left
+,.learn-contentbox-top-middle
+,.learn-contentbox-top-right
+,.learn-contentbox-bottom-left
+,.learn-contentbox-bottom-middle
+,.learn-contentbox-bottom-right
+{
+  margin-bottom: 2rem;
+  background-color: white;
+
+}
+
+.learn-contentbox-description{
+  background-color: white;
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+}
+
+/* EXHIBIT SECTION */
+
+.exhibit .exhibit-contentbox-header{
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.exhibit .exhibit-contentbox-header h2{
+  margin: 0;
+  font-weight: 900;
+}
+
+.exhibit-content-box-header h2{
+  /*margin-top: 0;*/
+}
+
+.exhibit-content-box-left{
+  width:60%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+/*.exhibit-content-box-left-video img{*/
+.exhibit-content-box-left-video video{
+  /* why does setting this to 100% mean that it doesnt expand to fill
+  the whole screen?? */
+  width: 100%;
+}
+
+.exhibit .exhibit-content-boxs{
+  display: flex;
+  flex-direction: row;
+}
+
+.exhibit-content-box-right{
+  width:40%;
+}
+
+.exhibit-content-box-left-text{
+  display: flex;
+  flex-direction: column;
+}
+
+.exhibit-content-sub-text-box{
+  display: flex;
+  flex-direction: column;
+}
+
+.exhibit-content-box-right-top{
+  background-color: #D3D3D3;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+
+}
+
+.exhibit-content-box-right-bottom{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  padding-top: 1rem;
+  padding-left: 1rem;
+
+}
+
+/*.exhibit-content-box-right-top-image
+,.exhibit-content-box-right-bottom-image{
+*/
+  .exhibit-content-box-image{
+  padding-right: 1rem;
+  width:35%;
+}
+
+.exhibit-content-box-image img{
+width:100%;
+height: auto;
+}
+
+.exhibit{
+  padding-bottom: 2rem;
+}
+
+/* FOOTER SECTION */
+
+footer{
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid #404040;
+}
+
+footer .content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+
+}
+
+footer .content .footer-nav a{
+    text-decoration: none;
+    padding-left:16px;
+    color:#404040;
+}
+
+footer .content .footer-nav a:hover{
+  transition-property: color;
+  color: blue;
+}
+
+footer .content .footer-nav{
+padding-right: 2rem;
+}
+
+@media only screen and
+(min-width:321px)
+
+{
+  .header .Mobile .navigation-mobile span{
+    display: none;
+  }
+
+  .Mobile .learn-contentbox-description{
+    display: none;
+  }
+
+  .exhibit .content .mobile{
+    display: none;
+  }
+
+}
+
+ @media only screen and (max-width:320px){
+   .header .Desktop .content{
+     display: none;
+   }
+
+   .header .Mobile .navigation-mobile{
+     display: flex;
+     flex-direction: row;
+     justify-content:space-around;;
+     align-items: center;
+     height: 4rem;
+   }
+
+   .explore .content{
+     display: flex;
+     flex-direction: column;
+   }
+   .explore-image{
+     width:100%;
+     padding:0;
+     margin:auto 0;
+   }
+
+   .explore-content-box{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     background-color: #D3D3D3;
+     margin-right: auto;
+     width:100%;
+   }
+
+   .explore-content-box-container{
+     display:flex;
+     flex-direction: column;
+     width: 100%;
+
+   }
+
+   .explore-content-main-text-box{
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     font-size: 2rem;
+     font-weight: bolder;
+     color:#303030
+   }
+
+   .explore-content-sub-text-box{
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     font-size: 1rem;
+     line-height:1.5;
+     color:#303030;
+     padding-top: 0.5rem;
+     padding-bottom: 1rem;
+   }
+
+   .explore-starthere-btn{
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     font-size: 2rem;
+     color:white;
+     padding-top: 1rem;
+     padding-bottom: 1rem;
+     background-color: #404040;
+   }
+
+.notices-content-box-left{
+  width: 100%;
+  display: none;
+}
+
+.notices-content-box-right{
+  width: 100%;
+  align-items: center;
+}
+
+.notices-content-box-right-middle, .notices-content-box-right-top, .notices-content-box-right-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.notices-content-box-right-image {
+    padding-left: 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+.notices-content-box-text {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.learn .content{
+  background-color: white;
+}
+
+
+.Desktop .learn-content-boxs{
+  display: none;
+}
+
+.learn-contentbox-description {
+    background-color: #D3D3D3;
+    padding-left: 0;
+    padding-bottom: 0;
+}
+
+.learn-contentbox-description span{
+  padding: 1rem 1rem;
+}
+
+.learn-contentbox-description .white-space{
+  background-color: white;
+  padding:0.2rem 0.2rem;
+}
+
+.exhibit .content .desktop{
+  display: none;
+}
+
+footer{
+  border-top: 0px;
+}
+
+footer .footer-nav{
+    display: none;
+}
+
+footer .content{
+  font-size: .80rem;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+}
